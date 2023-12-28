@@ -20,17 +20,17 @@ Package.onUse(function(api) {
 
   api.use([
     'check',
-    'ostrio:flow-router-extra@3.7.5',
+    'ostrio:flow-router-extra',
     'underscore',
-    'useraccounts:core@1.15.0',
+    'useraccounts:core',
     'modules'
   ], ['client', 'server']);
 
   api.use([
-     'react@0.14.1_1',
-     'kadira:blaze-layout@2.3.0',
-     'kadira:react-layout@1.5.3',
-     'gwendall:blaze-to-react@0.1.2'
+     'react',
+     'pwix:blaze-layout',
+     'kadira:react-layout',
+     'gwendall:blaze-to-react'
   ], ['client', 'server'], { weak: true });
 
   api.addFiles([
