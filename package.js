@@ -9,18 +9,18 @@
 Package.describe({
   name: 'seakaytee:flow-routing-extra',
   summary: 'UserAccounts package providing routes configuration capability via ostrio:flow-router-extra.',
-  version: '1.0.1',
+  version: '1.0.2',
   git: 'https://github.com/meteor-compat/useraccounts-flow-routing-extra',
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@2.4');
+  api.versionsFrom(['2.3','3.0']);
 
   api.use('ecmascript');
 
   api.use([
     'check',
-    'ostrio:flow-router-extra',
+    'ostrio:flow-router-extra@3.10.1',
     'underscore',
     'useraccounts:core',
     'modules'
@@ -28,7 +28,6 @@ Package.onUse(function(api) {
 
   api.use([
      'react',
-     'pwix:blaze-layout',
      'kadira:react-layout',
      'gwendall:blaze-to-react'
   ], ['client', 'server'], { weak: true });
